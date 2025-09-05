@@ -4,27 +4,391 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Songify Premium</title>
+    <!--Google font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800;900&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./styles/styles.css" />
-    <link rel="shortcut icon" href="./assets/images/favicon-32x32.png" type="image/x-icon" />
+    <link rel=" icon" href="./assets/icons/favicon.ico" type="image/x-icon" />
   </head>
   <body>
-    <header class="banner">
-      <div>
-        <div class="logo">
-          <!--agregar logo-->
+    <input type="checkbox" id="toggle-menu" />
+    <div>
+      <header class="banner">
+        <div class="container-nav-logo">
+          <!--Este div  contiene el logo y la navbar-->
+          <div class="logo-container">
+            <img
+              src="./assets/images/Logo-horizontal.jpg"
+              alt="Logo de Soundify"
+              class="logo-img"
+            />
+          </div>
+          <label class="hamburger" for="toggle-menu">
+            <span class="hamburger-bar"></span>
+            <span class="hamburger-bar"></span>
+            <span class="hamburger-bar"></span>
+          </label>
+          <nav class="navbar">
+            <ul>
+              <li><a href="#">Asistencia</a></li>
+              <li><a href="#">Descargar</a></li>
+              <li><a href="#">Premium</a></li>
+              <li role="separator"></li>
+              <li><a href="#">Registrarse</a></li>
+              <li><a href="#">Iniciar Sesión</a></li>
+            </ul>
+          </nav>
         </div>
-        <nav>
-          <ul>
-            <li><a>Premium</a></li>
-            <li><a>Asistencia</a></li>
-            <li><a>Descargar</a></li>
-            <li role="separator"></li>
-            <li><!--boton con logo usuario--></li>
+      </header>
+    </div>
+    <main>
+      <section class="intro">
+        <div class="intro-content">
+          <h1>Exprime al máximo tu música con Premium Individual.</h1>
+          <h2>Disfruta de música sin interrupciones con Soundify Premium.</h2>
+          <p>Desde solo 11,99 €. Cancela cuando quieras.</p>
+          <div class="intro-buttons">
+            <a class="btn btn-primary" href="#">Pasar a Premium Individual</a>
+            <a class="btn btn-secondary" href="#">Ver todos los planes</a>
+          </div>
+          <a href="#" class="legal-text">Consulta las bases y condiciones</a>
+        </div>
+        <div class="intro-image">
+          <img
+            src="./assets/images/Background-removebg-preview.png"
+            alt="Carátula de álbum"
+          />
+        </div>
+      </section>
+      <section class="premium-benefits">
+        <div class="benefits-header">
+          <h2 class="subtitle">Siente la diferencia</h2>
+          <p>
+            Pásate a Premium y disfruta del control total de lo que escuchas.
+            Cancela cuando quieras.
+          </p>
+        </div>
+
+        <div class="benefits-scroll">
+          <div
+            class="benefits-grid"
+            role="table"
+          >
+            <!-- Encabezados -->
+            <div class="cell cell--head" role="columnheader">Qué incluye</div>
+            <div class="cell cell--head align-center" role="columnheader">
+              Plan<br />Soundify Free
+            </div>
+            <div class="cell cell--head align-center" role="columnheader">
+              Planes<br />Premium de Soundify
+            </div>
+
+            <!-- Fila 1 -->
+            <div class="cell cell--feature">
+              <span class="feat">Escucha tu música favorita sin anuncios</span>
+            </div>
+            <div class="cell align-center">
+              <span class="dash" aria-hidden="true"></span>
+            </div>
+            <div class="cell align-center">
+              <span class="check" aria-label="Incluido"></span>
+            </div>
+
+            <!-- Fila 2 -->
+            <div class="cell cell--feature">
+              <span class="feat"
+                >Descarga de canciones para disfrutarlas sin conexión</span
+              >
+            </div>
+            <div class="cell align-center">
+              <span class="dash" aria-hidden="true"></span>
+            </div>
+            <div class="cell align-center">
+              <span class="check" aria-label="Incluido"></span>
+            </div>
+
+            <!-- Fila 3 -->
+            <div class="cell cell--feature">
+              <span class="feat">Escucha canciones en cualquier orden</span>
+            </div>
+            <div class="cell align-center">
+              <span class="dash" aria-hidden="true"></span>
+            </div>
+            <div class="cell align-center">
+              <span class="check" aria-label="Incluido"></span>
+            </div>
+
+            <!-- Fila 4 -->
+            <div class="cell cell--feature">
+              <span class="feat">Calidad del audio alta</span>
+            </div>
+            <div class="cell align-center">
+              <span class="dash" aria-hidden="true"></span>
+            </div>
+            <div class="cell align-center">
+              <span class="check" aria-label="Incluido"></span>
+            </div>
+
+            <!-- Fila 5 -->
+            <div class="cell cell--feature">
+              <span class="feat"
+                >Escucha lo que quieras con tus amigos, en tiempo real</span
+              >
+            </div>
+            <div class="cell align-center">
+              <span class="dash" aria-hidden="true"></span>
+            </div>
+            <div class="cell align-center">
+              <span class="check" aria-label="Incluido"></span>
+            </div>
+
+            <!-- Fila 6 -->
+            <div class="cell cell--feature">
+              <span class="feat">Organiza la cola de reproducción</span>
+            </div>
+            <div class="cell align-center">
+              <span class="dash" aria-hidden="true"></span>
+            </div>
+            <div class="cell align-center">
+              <span class="check" aria-label="Incluido"></span>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="card-payments">
+        <h2 class="subtitle">Planes asequibles para cualquier situación</h2>
+        <h3>
+          Elige un plan Premium y escucha música sin anuncios y sin límites en
+          teléfonos, altavoces y otros dispositivos. Paga de varias formas.
+          Cancela cuando quieras.
+        </h3>
+        <img
+          src="/assets/images/cards-payment.png"
+          class="card-payments"
+          alt="Métodos de pago aceptados"
+        />
+        <aside class="premium-includes">
+          <h3 class="includes-title">
+            Todos los planes Premium incluyen lo siguiente:
+          </h3>
+          <ul class="includes-list">
+            <li>Escucha tu música favorita sin anuncios</li>
+            <li>Descarga de canciones para disfrutarlas sin conexión</li>
+            <li>Escucha canciones en cualquier orden</li>
+            <li>Calidad del audio alta</li>
+            <li>Escucha lo que quieras con tus amigos, en tiempo real</li>
+            <li>Organiza la cola de reproducción</li>
           </ul>
+        </aside>
+      </section>
+      <section class="plans" aria-label="Planes Premium">
+        <div class="plans-grid">
+          <!-- Individual -->
+          <article class="plan-card plan--individual">
+            <header class="plan-header">
+              <div class="plan-badge">Premium</div>
+              <h3 class="plan-title">Individual</h3>
+              <p class="plan-price">11,99 € al mes</p>
+            </header>
+            <hr class="plan-sep" />
+            <ul class="plan-features">
+              <li>1 cuenta Premium</li>
+              <li>Cancela cuando quieras</li>
+            </ul>
+            <a href="#" class="btn-plan btn--individual"
+              >Pasar a Premium Individual</a
+            >
+            <a href="#" class="plan-terms">Consulta las condiciones.</a>
+          </article>
+
+          <!-- Estudiantes -->
+          <article class="plan-card plan--students">
+            <header class="plan-header">
+              <div class="plan-badge">Premium</div>
+              <h3 class="plan-title">Estudiantes</h3>
+              <p class="plan-price">6,49 € al mes</p>
+            </header>
+            <hr class="plan-sep" />
+            <ul class="plan-features">
+              <li>1 cuenta Premium verificada</li>
+              <li>Descuento para estudiantes que cumplan los requisitos</li>
+              <li>Cancela cuando quieras</li>
+            </ul>
+            <a href="#" class="btn-plan btn--students"
+              >Pasar a Premium para Estudiantes</a
+            >
+            <p class="plan-note">
+              Disponible solo para estudiantes de centros de educación superior
+              acreditados.
+              <a href="#" class="plan-terms-inline"
+                >Consulta las condiciones.</a
+              >
+            </p>
+          </article>
+
+          <!-- Duo -->
+          <article class="plan-card plan--duo">
+            <header class="plan-header">
+              <div class="plan-badge">Premium</div>
+              <h3 class="plan-title">Duo</h3>
+              <p class="plan-price">16,99 € al mes</p>
+            </header>
+            <hr class="plan-sep" />
+            <ul class="plan-features">
+              <li>2 cuentas Premium</li>
+              <li>Cancela cuando quieras</li>
+            </ul>
+            <a href="#" class="btn-plan btn--duo">Pasar a Premium Duo</a>
+            <a href="#" class="plan-terms"
+              >Para parejas que convivan. Consulta las condiciones.</a
+            >
+          </article>
+
+          <!-- Familiar -->
+          <article class="plan-card plan--family">
+            <header class="plan-header">
+              <div class="plan-badge">Premium</div>
+              <h3 class="plan-title">Familiar</h3>
+              <p class="plan-price">20,99 € al mes</p>
+            </header>
+            <hr class="plan-sep" />
+            <ul class="plan-features">
+              <li>Hasta 6 cuentas Premium</li>
+              <li>Controla el contenido etiquetado como explícito</li>
+              <li>Cancela cuando quieras</li>
+            </ul>
+            <a href="#" class="btn-plan btn--family"
+              >Pasar a Premium Familiar</a
+            >
+            <a href="#" class="plan-terms"
+              >Para hasta 6 miembros de una familia que convivan. Consulta las
+              condiciones.</a
+            >
+          </article>
+        </div>
+      </section>
+      <section class="faqs" aria-label="Preguntas frecuentes">
+        <h2>¿Tienes alguna pregunta?</h2>
+
+        <div class="faq-item">
+          <h3>¿Qué es Soundify Premium?</h3>
+          <p>
+            Soundify Premium es la suscripción que te permite escuchar música
+            sin anuncios, con saltos ilimitados y la mejor calidad de audio
+            disponible.
+          </p>
+        </div>
+
+        <div class="faq-item">
+          <h3>¿Puedo cancelar mi suscripción cuando quiera?</h3>
+          <p>
+            Sí, puedes cancelar en cualquier momento desde la configuración de
+            tu cuenta. Seguirás disfrutando de Soundify Premium hasta que
+            termine tu ciclo de facturación.
+          </p>
+        </div>
+
+        <div class="faq-item">
+          <h3>¿Existe un plan para estudiantes?</h3>
+          <p>
+            Sí, los estudiantes de centros acreditados pueden obtener Soundify
+            Premium con un descuento especial. Solo tendrás que verificar tu
+            condición de estudiante una vez al año.
+          </p>
+        </div>
+
+        <div class="faq-item">
+          <h3>¿Puedo compartir mi cuenta con familiares o amigos?</h3>
+          <p>
+            Cada cuenta es personal, pero Soundify ofrece planes Duo y Familiar
+            para que varias personas disfruten de Premium con un solo pago
+            mensual.
+          </p>
+        </div>
+      </section>
+    </main>
+    <footer class="site-footer">
+      <div class="footer-top">
+        <!-- Logo -->
+        <a class="footer-brand" href="#">
+          <img src="./assets/images/Logo-horizontal.jpg" alt="Soundify Logo" />
+        </a>
+
+        <!-- Columnas de links -->
+        <nav class="footer-columns">
+          <div class="footer-col">
+            <h4>Empresa</h4>
+            <ul>
+              <li><a href="#">Acerca de</a></li>
+              <li><a href="#">Empleo</a></li>
+              <li><a href="#">For the Record</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-col">
+            <h4>Comunidades</h4>
+            <ul>
+              <li><a href="#">Para artistas</a></li>
+              <li><a href="#">Desarrolladores</a></li>
+              <li><a href="#">Publicidad</a></li>
+              <li><a href="#">Inversores</a></li>
+              <li><a href="#">Proveedores</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-col">
+            <h4>Enlaces útiles</h4>
+            <ul>
+              <li><a href="#">Asistencia</a></li>
+              <li><a href="#">Reproductor web</a></li>
+              <li><a href="#">App gratis para móvil</a></li>
+              <li><a href="#">Importa tu música</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-col">
+            <h4>Planes de Soundify</h4>
+            <ul>
+              <li><a href="#">Premium Individual</a></li>
+              <li><a href="#">Premium Duo</a></li>
+              <li><a href="#">Premium Familiar</a></li>
+              <li><a href="#">Premium para Estudiantes</a></li>
+              <li><a href="#">Soundify Free</a></li>
+            </ul>
+          </div>
         </nav>
+
+        <!-- Redes sociales (imagen única con link) -->
+        <div class="footer-social">
+          <a href="#">
+            <img
+              src="./assets/images/social-networks.png"
+              alt="Facebook, X, Instagram y YouTube"
+            />
+          </a>
+        </div>
       </div>
-    </header>
-    <main></main>
-    <footer></footer>
+
+      <!-- Parte inferior -->
+      <div class="footer-bottom">
+        <ul class="legal-links">
+          <li><a href="#">Legal</a></li>
+          <li><a href="#">Centro de seguridad y privacidad</a></li>
+          <li><a href="#">Política de privacidad</a></li>
+          <li><a href="#">Configuración de cookies</a></li>
+          <li><a href="#">Información sobre los anuncios</a></li>
+          <li><a href="#">Accesibilidad</a></li>
+        </ul>
+
+        <div class="footer-meta">
+          <span class="locale">España (Español)</span>
+          <span class="copy">© 2025 Soundify</span>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
